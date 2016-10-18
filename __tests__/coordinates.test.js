@@ -1,10 +1,10 @@
 'use strict'
 
-const coordinates = require('../coordinates')
+const Coordinates = require('../services/coordinates')
 
 describe('move and rotate rover around', () => {
   it('move forward', () => {
-    const results = coordinates(0, 0, 'e', 'f')
+    const results = Coordinates.next(0, 0, 'e', 'f')
     const expectation = {
       x: 1,
       y: 0,
@@ -14,7 +14,7 @@ describe('move and rotate rover around', () => {
   })
 
   it('move backward', () => {
-    const results = coordinates(0, 0, 'n', 'b')
+    const results = Coordinates.next(0, 0, 'n', 'b')
     const expectation = {
       x: 0,
       y: -1,
@@ -24,7 +24,7 @@ describe('move and rotate rover around', () => {
   })
 
   it('rotate right', () => {
-    const results = coordinates(0, 0, 'e', 'r')
+    const results = Coordinates.next(0, 0, 'e', 'r')
     const expectation = {
       x: 0,
       y: 0,
@@ -34,7 +34,7 @@ describe('move and rotate rover around', () => {
   })
 
   it('rotate left', () => {
-    const results = coordinates(0, 0, 'n', 'l')
+    const results = Coordinates.next(0, 0, 'n', 'l')
     const expectation = {
       x: 0,
       y: 0,
