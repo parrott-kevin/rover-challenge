@@ -1,0 +1,18 @@
+{
+  "name": "rover-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/parrott-kevin/rover-challenge.git",
+    "type": "git"
+  },
+  "author": "Kevin Parrott <parrott.kevin@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "dependencies": {}
+}
