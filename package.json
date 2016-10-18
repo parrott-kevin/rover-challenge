@@ -1,7 +1,7 @@
 {
   "name": "rover-challenge",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./bin/www.js",
   "repository": {
     "url": "https://github.com/parrott-kevin/rover-challenge.git",
     "type": "git"
@@ -13,10 +13,15 @@
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^2.0.1",
-    "jest": "^16.0.1"
+    "jest": "^16.0.1",
+    "nodemon": "^1.11.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
   "scripts": {
+    "start": "node_modules/.bin/nodemon",
     "test": "jest"
   }
 }

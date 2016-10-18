@@ -1,0 +1,6 @@
+{
+	"init": {"x": 0, "y": 0, "facing": "e"},
+	"moves": ["f", "f", "f"],
+	"obstacle": {"x": 3, "y": 3},
+	"world": {"width": 10, "height": 10}
+}

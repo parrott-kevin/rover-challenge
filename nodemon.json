@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "ignore": [".git/*", ".vscode/*","node_modules/*"]
+}
