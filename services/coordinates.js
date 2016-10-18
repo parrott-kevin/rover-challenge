@@ -84,6 +84,36 @@ class Coordinates {
       }
     }
   }
+
+  static edge (location, world) {
+    if (location.x >= world.width) {
+      return {
+        x: 0,
+        y: location.y,
+        facing: location.facing
+      }
+    } else if (location.x < 0) {
+      return {
+        x: world.width - 1,
+        y: location.y,
+        facing: location.facing
+      }
+    } else if (location.y >= world.height) {
+      return {
+        x: location.x,
+        y: 0,
+        facing: location.facing
+      }
+    } else if (location.y < 0) {
+      return {
+        x: location.x,
+        y: world.height - 1,
+        facing: location.facing
+      }
+    } else {
+      return location
+    }
+  }
 }
 
 module.exports = Coordinates
