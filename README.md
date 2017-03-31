@@ -6,6 +6,7 @@
 * Grid bounds are always positive numbers
 * Rover can be started at any point in the world
 
+
 ## Running
 * Install yarn from https://yarnpkg.com/
 * Run `yarn install` followed by `yarn start`
